@@ -9,6 +9,7 @@ uvicorn = "*"
 pyyaml = "*"
 alembic = "*"
 sqlalchemy = "*"
+requests = "*"
 
 [dev-packages]
 
