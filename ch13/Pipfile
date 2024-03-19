@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+uvicorn = "*"
+pyyaml = "*"
+alembic = "*"
+sqlalchemy = "*"
+requests = "*"
+cryptography = "*"
+pyjwt = "*"
+psycopg2 = "*"
+
+[dev-packages]
+awscli = "*"
+
+[requires]
+python_version = "3.10"
+python_full_version = "3.10.6"

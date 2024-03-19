@@ -27,7 +27,7 @@ class AuthorizeRequestMiddleware(BaseHTTPMiddleware):
     async def dispatch(
         self, request: Request, call_next: RequestResponseEndpoint
     ) -> Response:
-        if request.url.path in ["/login", "/register"]:
+        if request.url.path in ["/login", "/register", "/refresh"]:
             return await call_next(request)
         if request.method == "OPTIONS":
             return await call_next(request)
